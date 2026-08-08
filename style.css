@@ -15,9 +15,7 @@
 
   --border: #dbe3ec;
 
-  --shadow:
-    0 18px 45px
-    rgba(31, 50, 81, 0.1);
+  --shadow: 0 18px 45px rgba(31, 50, 81, 0.1);
 
   --max-width: 1160px;
 }
@@ -37,7 +35,6 @@ html {
 
 body {
   margin: 0;
-
   background: var(--background);
   color: var(--text-primary);
 
@@ -51,6 +48,10 @@ body {
     sans-serif;
 
   line-height: 1.6;
+
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 a {
@@ -75,32 +76,25 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-
   z-index: 1000;
 
-  background:
-    rgba(246, 248, 251, 0.94);
+  background: rgba(246, 248, 251, 0.94);
 
-  border-bottom:
-    1px solid
-    rgba(219, 227, 236, 0.8);
+  border-bottom: 1px solid rgba(219, 227, 236, 0.8);
 
   backdrop-filter: blur(16px);
+
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .navbar {
-  width:
-    min(
-      calc(100% - 32px),
-      var(--max-width)
-    );
-
+  width: min(calc(100% - 32px), var(--max-width));
   min-height: 76px;
-
   margin: 0 auto;
 
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 }
@@ -113,11 +107,9 @@ a {
   height: 50px;
 
   border-radius: 50%;
-
   overflow: hidden;
 
   display: block;
-
   flex-shrink: 0;
 }
 
@@ -128,12 +120,9 @@ a {
   display: block;
 
   object-fit: cover;
-
   border-radius: 50%;
 
-  border:
-    2px solid
-    var(--border);
+  border: 2px solid var(--border);
 
   transition:
     transform 180ms ease,
@@ -142,7 +131,6 @@ a {
 
 .logo:hover img {
   transform: scale(1.05);
-
   border-color: var(--accent);
 }
 
@@ -151,13 +139,10 @@ a {
 
 .nav-links {
   display: flex;
-
   align-items: center;
-
   gap: 28px;
 
   margin: 0;
-
   padding: 0;
 
   list-style: none;
@@ -165,9 +150,7 @@ a {
 
 .nav-links a {
   color: var(--text-secondary);
-
   font-size: 0.96rem;
-
   font-weight: 650;
 }
 
@@ -183,11 +166,9 @@ a {
   display: none;
 
   border: 0;
-
   background: transparent;
 
   color: var(--text-primary);
-
   font-size: 1.6rem;
 
   cursor: pointer;
@@ -199,13 +180,12 @@ a {
 ======================================== */
 
 main {
-  width:
-    min(
-      calc(100% - 32px),
-      var(--max-width)
-    );
-
+  width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
+
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -219,11 +199,9 @@ main {
   color: var(--accent);
 
   font-size: 0.82rem;
-
   font-weight: 800;
 
   letter-spacing: 0.13em;
-
   text-transform: uppercase;
 }
 
@@ -237,14 +215,10 @@ main {
 
   padding: 0 20px;
 
-  border:
-    1px solid
-    transparent;
-
+  border: 1px solid transparent;
   border-radius: 14px;
 
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
@@ -262,12 +236,9 @@ main {
 
 .primary-button {
   background: var(--accent);
-
   color: white;
 
-  box-shadow:
-    0 12px 26px
-    rgba(36, 99, 235, 0.22);
+  box-shadow: 0 12px 26px rgba(36, 99, 235, 0.22);
 }
 
 .primary-button:hover {
@@ -276,7 +247,6 @@ main {
 
 .secondary-button {
   background: var(--surface);
-
   border-color: var(--border);
 }
 
@@ -292,9 +262,7 @@ main {
 .hero {
   min-height: 680px;
 
-  padding:
-    96px 0
-    72px;
+  padding: 96px 0 72px;
 
   display: grid;
 
@@ -312,33 +280,20 @@ main {
 
   margin: 0;
 
-  font-size:
-    clamp(
-      3rem,
-      7vw,
-      5.8rem
-    );
+  font-size: clamp(3rem, 7vw, 5.8rem);
 
   line-height: 0.98;
-
   letter-spacing: -0.055em;
 }
 
 .hero-summary {
   max-width: 720px;
 
-  margin:
-    28px 0
-    14px;
+  margin: 28px 0 14px;
 
   color: var(--text-secondary);
 
-  font-size:
-    clamp(
-      1.12rem,
-      2vw,
-      1.35rem
-    );
+  font-size: clamp(1.12rem, 2vw, 1.35rem);
 }
 
 .hero-focus {
@@ -353,7 +308,6 @@ main {
   margin-top: 34px;
 
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 14px;
@@ -365,10 +319,7 @@ main {
 .hero-card {
   padding: 34px;
 
-  border:
-    1px solid
-    var(--border);
-
+  border: 1px solid var(--border);
   border-radius: 28px;
 
   background:
@@ -382,9 +333,7 @@ main {
 }
 
 .card-label {
-  margin:
-    0 0
-    10px;
+  margin: 0 0 10px;
 
   color: var(--accent);
 
@@ -412,14 +361,11 @@ main {
 }
 
 .quick-details span {
-  padding:
-    12px
-    14px;
+  padding: 12px 14px;
 
   border-radius: 12px;
 
-  background:
-    rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.78);
 
   color: var(--text-primary);
 
@@ -444,12 +390,7 @@ main {
 .section-heading h2 {
   margin: 0;
 
-  font-size:
-    clamp(
-      2rem,
-      4vw,
-      3.5rem
-    );
+  font-size: clamp(2rem, 4vw, 3.5rem);
 
   line-height: 1.1;
 
@@ -465,10 +406,7 @@ main {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      3,
-      minmax(0, 1fr)
-    );
+    repeat(3, minmax(0, 1fr));
 
   gap: 22px;
 }
@@ -476,9 +414,7 @@ main {
 .feature-card {
   padding: 28px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 22px;
 
@@ -499,19 +435,14 @@ main {
 ======================================== */
 
 .featured-projects-section {
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .project-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      2,
-      minmax(0, 1fr)
-    );
+    repeat(2, minmax(0, 1fr));
 
   gap: 22px;
 }
@@ -519,9 +450,7 @@ main {
 .project-card {
   padding: 28px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 22px;
 
@@ -562,9 +491,7 @@ main {
 }
 
 .project-card h3 {
-  margin:
-    26px 0
-    10px;
+  margin: 26px 0 10px;
 
   font-size: 1.45rem;
 }
@@ -574,9 +501,7 @@ main {
 }
 
 .project-tags {
-  margin:
-    auto 0
-    22px;
+  margin: auto 0 22px;
 
   padding-top: 16px;
 
@@ -588,9 +513,7 @@ main {
 }
 
 .project-tags span {
-  padding:
-    7px
-    10px;
+  padding: 7px 10px;
 
   border-radius: 999px;
 
@@ -653,12 +576,7 @@ main {
 .callout-section h2 {
   margin: 0;
 
-  font-size:
-    clamp(
-      1.8rem,
-      4vw,
-      3rem
-    );
+  font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
 .callout-section p:not(.eyebrow) {
@@ -675,20 +593,13 @@ main {
 .contact-hero {
   max-width: 850px;
 
-  padding:
-    110px 0
-    72px;
+  padding: 110px 0 72px;
 }
 
 .contact-hero h1 {
   margin: 0;
 
-  font-size:
-    clamp(
-      3.2rem,
-      8vw,
-      6rem
-    );
+  font-size: clamp(3.2rem, 8vw, 6rem);
 
   line-height: 1;
 
@@ -698,36 +609,24 @@ main {
 .contact-intro {
   max-width: 680px;
 
-  margin:
-    26px 0
-    0;
+  margin: 26px 0 0;
 
   color: var(--text-secondary);
 
-  font-size:
-    clamp(
-      1.15rem,
-      2vw,
-      1.4rem
-    );
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
 }
 
 .contact-section {
   padding: 72px 0;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .contact-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      2,
-      minmax(0, 1fr)
-    );
+    repeat(2, minmax(0, 1fr));
 
   gap: 22px;
 }
@@ -737,9 +636,7 @@ main {
 
   padding: 30px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 22px;
 
@@ -760,8 +657,7 @@ main {
 .contact-card:hover {
   transform: translateY(-5px);
 
-  border-color:
-    rgba(36, 99, 235, 0.32);
+  border-color: rgba(36, 99, 235, 0.32);
 
   box-shadow: var(--shadow);
 }
@@ -771,9 +667,7 @@ main {
 
   height: 48px;
 
-  padding:
-    0
-    12px;
+  padding: 0 12px;
 
   border-radius: 14px;
 
@@ -791,17 +685,13 @@ main {
 }
 
 .contact-card h3 {
-  margin:
-    24px 0
-    8px;
+  margin: 24px 0 8px;
 
   font-size: 1.45rem;
 }
 
 .contact-card p {
-  margin:
-    0 0
-    24px;
+  margin: 0 0 24px;
 
   color: var(--text-secondary);
 }
@@ -836,12 +726,7 @@ main {
 .resume-callout h2 {
   margin: 0;
 
-  font-size:
-    clamp(
-      1.8rem,
-      4vw,
-      3rem
-    );
+  font-size: clamp(1.8rem, 4vw, 3rem);
 
   line-height: 1.15;
 }
@@ -864,13 +749,9 @@ main {
 }
 
 .tag-list span {
-  padding:
-    11px
-    15px;
+  padding: 11px 15px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 999px;
 
@@ -895,9 +776,7 @@ main {
 
   padding: 48px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 28px;
 
@@ -914,12 +793,7 @@ main {
 
   margin: 0;
 
-  font-size:
-    clamp(
-      2rem,
-      4vw,
-      3.5rem
-    );
+  font-size: clamp(2rem, 4vw, 3.5rem);
 
   line-height: 1.12;
 
@@ -929,9 +803,7 @@ main {
 .contact-thank-you p:not(.eyebrow) {
   max-width: 760px;
 
-  margin:
-    20px 0
-    28px;
+  margin: 20px 0 28px;
 
   color: var(--text-secondary);
 
@@ -943,16 +815,23 @@ main {
    ABOUT PAGE
 ======================================== */
 
+.about-hero,
+.about-section,
+.about-future-section {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+
 /* About Hero */
 
 .about-hero {
   min-height: 700px;
 
-  padding:
-    96px 0
-    110px;
+  padding: 96px 0 110px;
 
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
     minmax(0, 1.25fr)
@@ -961,6 +840,16 @@ main {
   align-items: center;
 
   gap: 80px;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.about-hero-content {
+  display: block;
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .about-hero-content h1 {
@@ -968,12 +857,7 @@ main {
 
   margin: 0;
 
-  font-size:
-    clamp(
-      3rem,
-      6vw,
-      5.3rem
-    );
+  font-size: clamp(3rem, 6vw, 5.3rem);
 
   line-height: 1;
 
@@ -983,18 +867,11 @@ main {
 .about-intro {
   max-width: 720px;
 
-  margin:
-    26px 0
-    0;
+  margin: 26px 0 0;
 
   color: var(--text-secondary);
 
-  font-size:
-    clamp(
-      1.05rem,
-      2vw,
-      1.25rem
-    );
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
 
   line-height: 1.75;
 }
@@ -1018,6 +895,11 @@ main {
   width: min(100%, 390px);
 
   justify-self: end;
+
+  display: block;
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .about-photo {
@@ -1025,9 +907,7 @@ main {
 
   aspect-ratio: 4 / 5;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 28px;
 
@@ -1049,9 +929,7 @@ main {
 
   padding: 20px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 18px;
 
@@ -1073,9 +951,7 @@ main {
 }
 
 .about-photo-note p {
-  margin:
-    7px 0
-    0;
+  margin: 7px 0 0;
 
   color: var(--text-primary);
 
@@ -1092,33 +968,39 @@ main {
 .about-section {
   padding: 96px 0;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 
 /* About Story */
 
 .about-story-section {
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
     minmax(220px, 0.55fr)
     minmax(0, 1.45fr);
 
   gap: 80px;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.about-section-label {
+  display: block;
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .about-section-label h2 {
   margin: 0;
 
-  font-size:
-    clamp(
-      2rem,
-      4vw,
-      3.4rem
-    );
+  font-size: clamp(2rem, 4vw, 3.4rem);
 
   line-height: 1.1;
 
@@ -1127,12 +1009,15 @@ main {
 
 .about-story {
   max-width: 760px;
+
+  display: block;
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .about-story p {
-  margin:
-    0 0
-    24px;
+  margin: 0 0 24px;
 
   color: var(--text-secondary);
 
@@ -1160,7 +1045,7 @@ main {
 
   border-radius: 30px;
 
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
     minmax(0, 1fr)
@@ -1171,6 +1056,9 @@ main {
   background: var(--text-primary);
 
   color: white;
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .people-tech-heading h2 {
@@ -1178,12 +1066,7 @@ main {
 
   margin: 0;
 
-  font-size:
-    clamp(
-      2rem,
-      4vw,
-      3.4rem
-    );
+  font-size: clamp(2rem, 4vw, 3.4rem);
 
   line-height: 1.1;
 
@@ -1191,9 +1074,7 @@ main {
 }
 
 .people-tech-content p {
-  margin:
-    0 0
-    20px;
+  margin: 0 0 20px;
 
   color: #c5d1df;
 
@@ -1210,15 +1091,15 @@ main {
 /* About Interests */
 
 .about-interest-grid {
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
-    repeat(
-      2,
-      minmax(0, 1fr)
-    );
+    repeat(2, minmax(0, 1fr));
 
   gap: 22px;
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .about-interest-card {
@@ -1226,9 +1107,7 @@ main {
 
   padding: 30px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 22px;
 
@@ -1237,6 +1116,9 @@ main {
   flex-direction: column;
 
   background: var(--surface);
+
+  visibility: visible;
+  opacity: 1;
 
   transition:
     transform 180ms ease,
@@ -1247,8 +1129,7 @@ main {
 .about-interest-card:hover {
   transform: translateY(-5px);
 
-  border-color:
-    rgba(36, 99, 235, 0.3);
+  border-color: rgba(36, 99, 235, 0.3);
 
   box-shadow: var(--shadow);
 }
@@ -1264,9 +1145,7 @@ main {
 }
 
 .about-interest-card h3 {
-  margin:
-    auto 0
-    12px;
+  margin: auto 0 12px;
 
   font-size: 1.5rem;
 }
@@ -1281,20 +1160,17 @@ main {
 /* Outside IT */
 
 .outside-section {
-  padding:
-    72px 0;
+  padding: 72px 0;
 }
 
 .outside-card {
   padding: 52px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 30px;
 
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
     minmax(0, 0.8fr)
@@ -1308,17 +1184,15 @@ main {
       rgba(255, 255, 255, 0.98),
       rgba(238, 243, 248, 0.96)
     );
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .outside-card h2 {
   margin: 0;
 
-  font-size:
-    clamp(
-      2rem,
-      4vw,
-      3.3rem
-    );
+  font-size: clamp(2rem, 4vw, 3.3rem);
 
   line-height: 1.1;
 
@@ -1326,9 +1200,7 @@ main {
 }
 
 .outside-content p {
-  margin:
-    0 0
-    20px;
+  margin: 0 0 20px;
 
   color: var(--text-secondary);
 
@@ -1349,27 +1221,28 @@ main {
 }
 
 .education-grid {
-  display: grid;
+  display: grid !important;
 
   grid-template-columns:
-    repeat(
-      2,
-      minmax(0, 1fr)
-    );
+    repeat(2, minmax(0, 1fr));
 
   gap: 22px;
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .education-card {
   padding: 32px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 22px;
 
   background: var(--surface);
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .education-card-top {
@@ -1377,9 +1250,7 @@ main {
 }
 
 .education-type {
-  padding:
-    7px
-    11px;
+  padding: 7px 11px;
 
   border-radius: 999px;
 
@@ -1395,9 +1266,7 @@ main {
 }
 
 .education-card h3 {
-  margin:
-    0 0
-    10px;
+  margin: 0 0 10px;
 
   font-size: 1.55rem;
 }
@@ -1409,9 +1278,7 @@ main {
 .education-degree {
   margin-bottom: 4px;
 
-  color:
-    var(--text-primary)
-    !important;
+  color: var(--text-primary) !important;
 
   font-weight: 700;
 }
@@ -1431,9 +1298,7 @@ main {
 }
 
 .education-details span {
-  padding:
-    7px
-    10px;
+  padding: 7px 10px;
 
   border-radius: 999px;
 
@@ -1452,9 +1317,7 @@ main {
 
   padding: 64px;
 
-  border:
-    1px solid
-    var(--border);
+  border: 1px solid var(--border);
 
   border-radius: 30px;
 
@@ -1464,23 +1327,26 @@ main {
       rgba(255, 255, 255, 0.98),
       rgba(238, 243, 248, 0.96)
     );
+
+  display: block !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .about-future-content {
   max-width: 850px;
+
+  display: block;
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .about-future-content h2 {
-  margin:
-    0 0
-    24px;
+  margin: 0 0 24px;
 
-  font-size:
-    clamp(
-      2.2rem,
-      5vw,
-      4rem
-    );
+  font-size: clamp(2.2rem, 5vw, 4rem);
 
   line-height: 1.05;
 
@@ -1515,19 +1381,13 @@ main {
 ======================================== */
 
 .site-footer {
-  width:
-    min(
-      calc(100% - 32px),
-      var(--max-width)
-    );
+  width: min(calc(100% - 32px), var(--max-width));
 
   min-height: 110px;
 
   margin: 0 auto;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 
   display: flex;
 
@@ -1538,6 +1398,9 @@ main {
   gap: 20px;
 
   color: var(--text-secondary);
+
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer-links {
@@ -1590,7 +1453,7 @@ main {
   /* About */
 
   .about-hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 
     gap: 64px;
   }
@@ -1602,25 +1465,25 @@ main {
   }
 
   .about-story-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 
     gap: 36px;
   }
 
   .people-tech-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 
     gap: 36px;
   }
 
   .outside-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 
     gap: 36px;
   }
 
   .education-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
 }
@@ -1657,9 +1520,7 @@ main {
 
     padding: 18px;
 
-    border:
-      1px solid
-      var(--border);
+    border: 1px solid var(--border);
 
     border-radius: 18px;
 
@@ -1716,18 +1577,14 @@ main {
   /* Homepage Callout */
 
   .callout-section {
-    padding:
-      34px
-      24px;
+    padding: 34px 24px;
   }
 
 
   /* Contact */
 
   .contact-hero {
-    padding:
-      72px 0
-      54px;
+    padding: 72px 0 54px;
   }
 
   .contact-card {
@@ -1735,9 +1592,7 @@ main {
   }
 
   .resume-callout {
-    padding:
-      32px
-      24px;
+    padding: 32px 24px;
 
     align-items: flex-start;
 
@@ -1749,9 +1604,7 @@ main {
   }
 
   .contact-thank-you {
-    padding:
-      32px
-      24px;
+    padding: 32px 24px;
   }
 
 
@@ -1760,9 +1613,14 @@ main {
   .about-hero {
     min-height: auto;
 
-    padding:
-      72px 0
-      90px;
+    padding: 72px 0 90px;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .about-hero-actions {
@@ -1774,10 +1632,7 @@ main {
   }
 
   .about-photo-wrapper {
-    width:
-      calc(
-        100% - 10px
-      );
+    width: calc(100% - 10px);
   }
 
   .about-photo-note {
@@ -1791,22 +1646,37 @@ main {
 
   .about-section {
     padding: 72px 0;
+
+    display: block;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .about-story-section {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
   }
 
 
   /* About Psychology */
 
   .people-tech-card {
-    padding:
-      32px
-      24px;
+    padding: 32px 24px;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
   }
 
 
   /* Interests */
 
   .about-interest-grid {
-    grid-template-columns: 1fr;
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
   }
 
   .about-interest-card {
@@ -1817,18 +1687,32 @@ main {
   /* Outside */
 
   .outside-card {
-    padding:
-      32px
-      24px;
+    padding: 32px 24px;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+  }
+
+
+  /* Education */
+
+  .education-grid {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
   }
 
 
   /* Looking Ahead */
 
   .about-future-section {
-    padding:
-      38px
-      24px;
+    padding: 38px 24px;
+
+    display: block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .about-future-actions {
@@ -1851,8 +1735,7 @@ main {
   /* Footer */
 
   .site-footer {
-    padding:
-      30px 0;
+    padding: 30px 0;
 
     align-items: flex-start;
 
