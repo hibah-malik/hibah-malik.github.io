@@ -3287,6 +3287,52 @@ main {
   line-height: 1.7;
 }
 
+/* ========================================
+   CERTIFICATION BUTTONS
+======================================== */
+
+.cert-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 16px;
+
+  min-height: 42px;
+
+  padding: 9px 15px;
+
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+
+  background: var(--accent);
+
+  color: white;
+
+  font-size: 0.84rem;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 6px 15px rgba(36, 99, 235, 0.16);
+
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.cert-button:hover {
+  color: white;
+
+  background: var(--accent-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 20px rgba(36, 99, 235, 0.22);
+}
 
 /* ---------------------------------------------------------
    SKILLS
