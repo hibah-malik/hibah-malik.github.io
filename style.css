@@ -1167,16 +1167,9 @@ main {
   padding: 52px;
 
   border: 1px solid var(--border);
-
   border-radius: 30px;
 
-  display: grid !important;
-
-  grid-template-columns:
-    minmax(0, 0.8fr)
-    minmax(0, 1.2fr);
-
-  gap: 64px;
+  display: block !important;
 
   background:
     linear-gradient(
@@ -1193,10 +1186,13 @@ main {
   margin: 0;
 
   font-size: clamp(2rem, 4vw, 3.3rem);
-
   line-height: 1.1;
-
   letter-spacing: -0.035em;
+}
+
+.outside-content {
+  margin-top: 20px;
+  max-width: 760px;
 }
 
 .outside-content p {
@@ -1205,7 +1201,6 @@ main {
   color: var(--text-secondary);
 
   font-size: 1.05rem;
-
   line-height: 1.75;
 }
 
@@ -1213,6 +1208,95 @@ main {
   margin-bottom: 0;
 }
 
+
+/* Outside IT hobby cards */
+
+.outside-interest-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+
+  margin-top: 28px;
+}
+
+.outside-interest-card {
+  padding: 24px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 28px rgba(31, 50, 81, 0.07);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.outside-interest-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 32px rgba(31, 50, 81, 0.11);
+}
+
+.outside-interest-icon {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 16px;
+
+  background: var(--surface-soft);
+
+  border-radius: 12px;
+
+  font-size: 1.35rem;
+}
+
+.outside-interest-card h3 {
+  margin: 0 0 10px;
+
+  color: var(--text-primary);
+
+  font-size: 1.05rem;
+}
+
+.outside-interest-card p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 720px) {
+
+  .outside-card {
+    padding: 32px 24px;
+  }
+
+  .outside-interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outside-interest-card {
+    padding: 20px;
+  }
+
+}
 
 /* Education */
 
